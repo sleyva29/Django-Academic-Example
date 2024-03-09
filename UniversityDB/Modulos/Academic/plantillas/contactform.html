@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+
+<html>
+    <head>      
+        <title>ContactForm</title>
+
+    </head>
+    <body>
+        <h1>Contact Us</h1>
+        <form action="/contact/" method="POST">{% csrf_token %}
+    
+            <input type="text" name="name" placeholder="Nombre">
+            <input type="email" name="email" placeholder="Tu e-mail">
+            <input type="text" name="subject" placeholder="Asunto">
+            <textarea name="message" placeholder="Mensaje"></textarea>
+            <button type="submit" name="submit">Send</button>
+        </form>
+
+</html>
